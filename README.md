@@ -3,7 +3,11 @@ Express + Angular application setup
 
 Introduction
 ------------
-This is a skaleton application using Express and Angular. 
+This is a skaleton application using Express and Angular.
+
+How does it work?
+-----------------
+ 
 Express is used as a API application and Angular is used as pure front end application.
 In development mode you run both the applications - Express on 3000 and Ng on 2400.
 Ng is configured to route all the API calls (URLs that start with /api) to port 3000.
@@ -16,7 +20,7 @@ Prerequisites
 - Install angular-cli
     - Go https://github.com/angular/angular-cli
 
-Recipe
+Recipe (without cloning this repo)
 -------
 - Create project folder
     - mkdir joint-ng-exp1
