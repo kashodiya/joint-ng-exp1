@@ -1,6 +1,23 @@
 Express + Angular application setup
 ===================================
 
+Introduction
+------------
+This is a skaleton application using Express and Angular. 
+Express is used as a API application and Angular is used as pure front end application.
+In development mode you run both the applications - Express on 3000 and Ng on 2400.
+Ng is configured to route all the API calls (URLs that start with /api) to port 3000.
+When done, you build Ng app. This will create HTML and related frontend files in public folder.
+To test frontend in production mode, just run Express on 3000.
+
+Prerequisites
+-------------
+- Install express generator
+- Install angular-cli
+    - Go https://github.com/angular/angular-cli
+
+Recipe
+-------
 - Create project folder
     - mkdir joint-ng-exp1
 - Get into new folder
@@ -22,7 +39,7 @@ Express + Angular application setup
     - Create api route (see the code)    
 - Run express app
     - nodemon
-- In new tab cd to frontend
+- Open new tab cd to frontend
     - cd frontend
 - Add prody config in frontend folder
     - See frontend/proxy-config.json
@@ -30,5 +47,17 @@ Express + Angular application setup
     - Line should looke like: "outDir": "../public",
 - Start frontend app
     - ng serve --proxy proxy-config.json
+- Open your app using
+    - http://localhost:4200
+    - Note that the calls to api is proxied to 
+        - http://localhost:3000
+
+
+How to build?
+-------------
+- In frontend folder 
+    - ng build
+- This will delete the public folder and create new     
+
 
 
